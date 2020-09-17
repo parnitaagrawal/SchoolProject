@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Registration</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+</head>
+<body>
+  <div class="container">
+    <div class="divRegistration">
+      <div class="row">
+        <div class="col">
+          <form action="post">
+          <h2>Register Student</h2><br>
+          <input id="txtFirstName" type="text" placeholder="FirstName">
+          <input id="txtLastName" type="text" placeholder="LastName"><br>
+          <label >
+            <input type="radio" name="radioGender"> Male
+          </label>
+          <label >
+            <input type="radio" name="radioGender"> Female
+          </label>
+          <label >
+            <input type="radio" name="radioGender"> Others
+          </label><br>
+          <input id="txtMobileNo" type="text" placeholder="Mobile No." ><br>
+          <input id="txtEmailId" type="text" placeholder="Email Id"><br>
+          <textarea id="txtAddress" rows="5" col="12" placeholder="Enter the Address" ></textarea><br>
+          <select id="ddlCountry" name="Country">
+            <option value="" selected="selected" >Select Country</option>
+          </select>
+          <select id="ddlState" name="State">
+            <option value="" selected="selected">Select State</option>
+          </select>
+          <select id="ddlCity" name="City">
+            <option value="" selected="selected">Select City</option>
+          </select><br>
+          <input type="checkbox" id="chkAgreement" name="Agreement">
+          <label for="Agreement">I Agree</label><br>
+          <button id="btnSave" type="button">Save</button>          
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="divRecordDisplay">
+      
+    </div>
+  </div>
+  
+  <script type="text/javascript" src="SchoolReg.js"></script>
+</body>
+</html>
